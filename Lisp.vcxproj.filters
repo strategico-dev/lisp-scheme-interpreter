@@ -13,5 +13,66 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Исходные файлы\Syntax">
+      <UniqueIdentifier>{77d0a1ec-c971-483f-9f71-189107ecb2a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Syntax\Operators">
+      <UniqueIdentifier>{e2358419-a8a6-4408-8d04-b9cce6c2e12d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Parsers">
+      <UniqueIdentifier>{f41c32bc-1171-4319-842d-ff321ede0304}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Environment">
+      <UniqueIdentifier>{3275022b-0b12-4f53-9f5d-d30e9728c63f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Syntax\Operators\BaseOperator.cpp">
+      <Filter>Исходные файлы\Syntax\Operators</Filter>
+    </ClCompile>
+    <ClCompile Include="Syntax\Expression.cpp">
+      <Filter>Исходные файлы\Syntax</Filter>
+    </ClCompile>
+    <ClCompile Include="Parsers\LexicalParser.cpp">
+      <Filter>Исходные файлы\Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="Syntax\TokenDefiner.cpp">
+      <Filter>Исходные файлы\Syntax</Filter>
+    </ClCompile>
+    <ClCompile Include="Syntax\OperatorDefiner.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Syntax\Operators\Plus.cpp">
+      <Filter>Исходные файлы\Syntax\Operators</Filter>
+    </ClCompile>
+    <ClCompile Include="Environment\Stack.cpp">
+      <Filter>Исходные файлы\Environment</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Syntax\Expression.hpp">
+      <Filter>Исходные файлы\Syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="Syntax\Operators\BaseOperator.hpp">
+      <Filter>Исходные файлы\Syntax\Operators</Filter>
+    </ClInclude>
+    <ClInclude Include="Parsers\LexicalParser.hpp">
+      <Filter>Исходные файлы\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="Syntax\TokenDefiner.hpp">
+      <Filter>Исходные файлы\Syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="Syntax\Operators\Plus.hpp">
+      <Filter>Исходные файлы\Syntax\Operators</Filter>
+    </ClInclude>
+    <ClInclude Include="Syntax\OperatorDefiner.hpp">
+      <Filter>Исходные файлы\Syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="Environment\Stack.hpp">
+      <Filter>Исходные файлы\Environment</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

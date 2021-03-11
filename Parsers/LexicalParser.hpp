@@ -3,6 +3,7 @@
 #include <Environment/Stack.hpp>
 #include <Syntax/Expression.hpp>
 #include <Syntax/TokenDefiner.hpp>
+#include <Environment/Variables.hpp>
 #include <Syntax/OperatorDefiner.hpp>
 
 class LexicalParser

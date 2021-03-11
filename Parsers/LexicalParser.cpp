@@ -11,12 +11,12 @@ int LexicalParser::parseCommand(const std::string& command, Expression* expressi
 
     while (i < command.length())
     {
-        j++;
         if (TokenDefiner::isOpenTag(command[i]))
         {
             if (!foundOpenTag)
             {
                 foundOpenTag = true;
+                j++;
             }
             else
             {
@@ -34,12 +34,14 @@ int LexicalParser::parseCommand(const std::string& command, Expression* expressi
         if (TokenDefiner::isCloseTag(command[i]))
         {
             i++;
+            j++;
             break;
         }
 
         if (TokenDefiner::isIgnoreToken(command[i]))
         {
             i++;
+            j++;
             continue;
         }
 
@@ -48,6 +50,7 @@ int LexicalParser::parseCommand(const std::string& command, Expression* expressi
             while (!TokenDefiner::isSeparator(command[i]))
             {
                 expressionOperator += command[i++];
+                j++;
             }
 
             foundOperator = true;
@@ -58,8 +61,17 @@ int LexicalParser::parseCommand(const std::string& command, Expression* expressi
         while (!TokenDefiner::isSeparator(command[i]))
         {
             operand += command[i++];
+            j++;
         }
-        operands.push_back(operand);
+
+        if (Variables::get(operand))
+        {
+            operands.push_back(Variables::get(operand)->getValue());
+        }
+        else
+        {
+            operands.push_back(operand);
+        }
     }
 
     expression->setOperator(OperatorDefiner::findByLexicalToken(expressionOperator));

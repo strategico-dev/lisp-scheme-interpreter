@@ -42,14 +42,23 @@
     <ClCompile Include="Syntax\TokenDefiner.cpp">
       <Filter>Исходные файлы\Syntax</Filter>
     </ClCompile>
-    <ClCompile Include="Syntax\OperatorDefiner.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="Syntax\Operators\Plus.cpp">
       <Filter>Исходные файлы\Syntax\Operators</Filter>
     </ClCompile>
     <ClCompile Include="Environment\Stack.cpp">
       <Filter>Исходные файлы\Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="Environment\Variables.cpp">
+      <Filter>Исходные файлы\Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="Environment\Variable.cpp">
+      <Filter>Исходные файлы\Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="Syntax\OperatorDefiner.cpp">
+      <Filter>Исходные файлы\Syntax</Filter>
+    </ClCompile>
+    <ClCompile Include="Syntax\Operators\Define.cpp">
+      <Filter>Исходные файлы\Syntax\Operators</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -73,6 +82,15 @@
     </ClInclude>
     <ClInclude Include="Environment\Stack.hpp">
       <Filter>Исходные файлы\Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="Environment\Variables.hpp">
+      <Filter>Исходные файлы\Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="Environment\Variable.hpp">
+      <Filter>Исходные файлы\Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="Syntax\Operators\Define.hpp">
+      <Filter>Исходные файлы\Syntax\Operators</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

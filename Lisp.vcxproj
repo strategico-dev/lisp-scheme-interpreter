@@ -88,7 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Lisp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Projects\Lisp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -103,7 +103,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Lisp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Projects\Lisp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -118,7 +118,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Lisp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Projects\Lisp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -133,7 +133,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Lisp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\User\Desktop\Projects\Lisp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -144,20 +144,26 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Environment\Stack.cpp" />
+    <ClCompile Include="Environment\Variable.cpp" />
+    <ClCompile Include="Environment\Variables.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Parsers\LexicalParser.cpp" />
     <ClCompile Include="Syntax\Expression.cpp" />
     <ClCompile Include="Syntax\OperatorDefiner.cpp" />
     <ClCompile Include="Syntax\Operators\BaseOperator.cpp" />
+    <ClCompile Include="Syntax\Operators\Define.cpp" />
     <ClCompile Include="Syntax\Operators\Plus.cpp" />
     <ClCompile Include="Syntax\TokenDefiner.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Environment\Stack.hpp" />
+    <ClInclude Include="Environment\Variable.hpp" />
+    <ClInclude Include="Environment\Variables.hpp" />
     <ClInclude Include="Parsers\LexicalParser.hpp" />
     <ClInclude Include="Syntax\Expression.hpp" />
     <ClInclude Include="Syntax\OperatorDefiner.hpp" />
     <ClInclude Include="Syntax\Operators\BaseOperator.hpp" />
+    <ClInclude Include="Syntax\Operators\Define.hpp" />
     <ClInclude Include="Syntax\Operators\Plus.hpp" />
     <ClInclude Include="Syntax\TokenDefiner.hpp" />
   </ItemGroup>

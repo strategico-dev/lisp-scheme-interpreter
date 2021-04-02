@@ -1,6 +1,5 @@
 #pragma once
 
-#include <iostream>
 #include <Environment/Stack.hpp>
 #include <Syntax/Operators/BaseOperator.hpp>
 

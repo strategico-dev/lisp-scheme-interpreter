@@ -152,6 +152,8 @@
     <ClCompile Include="Syntax\OperatorDefiner.cpp" />
     <ClCompile Include="Syntax\Operators\BaseOperator.cpp" />
     <ClCompile Include="Syntax\Operators\Define.cpp" />
+    <ClCompile Include="Syntax\Operators\Minus.cpp" />
+    <ClCompile Include="Syntax\Operators\Multiplication.cpp" />
     <ClCompile Include="Syntax\Operators\Plus.cpp" />
     <ClCompile Include="Syntax\TokenDefiner.cpp" />
   </ItemGroup>
@@ -164,6 +166,8 @@
     <ClInclude Include="Syntax\OperatorDefiner.hpp" />
     <ClInclude Include="Syntax\Operators\BaseOperator.hpp" />
     <ClInclude Include="Syntax\Operators\Define.hpp" />
+    <ClInclude Include="Syntax\Operators\Minus.hpp" />
+    <ClInclude Include="Syntax\Operators\Multiplication.hpp" />
     <ClInclude Include="Syntax\Operators\Plus.hpp" />
     <ClInclude Include="Syntax\TokenDefiner.hpp" />
   </ItemGroup>

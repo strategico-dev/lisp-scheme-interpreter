@@ -60,6 +60,12 @@
     <ClCompile Include="Syntax\Operators\Define.cpp">
       <Filter>Исходные файлы\Syntax\Operators</Filter>
     </ClCompile>
+    <ClCompile Include="Syntax\Operators\Minus.cpp">
+      <Filter>Исходные файлы\Syntax\Operators</Filter>
+    </ClCompile>
+    <ClCompile Include="Syntax\Operators\Multiplication.cpp">
+      <Filter>Исходные файлы\Syntax\Operators</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Syntax\Expression.hpp">
@@ -90,6 +96,12 @@
       <Filter>Исходные файлы\Environment</Filter>
     </ClInclude>
     <ClInclude Include="Syntax\Operators\Define.hpp">
+      <Filter>Исходные файлы\Syntax\Operators</Filter>
+    </ClInclude>
+    <ClInclude Include="Syntax\Operators\Minus.hpp">
+      <Filter>Исходные файлы\Syntax\Operators</Filter>
+    </ClInclude>
+    <ClInclude Include="Syntax\Operators\Multiplication.hpp">
       <Filter>Исходные файлы\Syntax\Operators</Filter>
     </ClInclude>
   </ItemGroup>

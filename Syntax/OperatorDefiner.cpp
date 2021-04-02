@@ -8,6 +8,14 @@ BaseOperator* OperatorDefiner::findByLexicalToken(const std::string& lexicalToke
 	{
 		expressionOperator = new Plus();
 	}
+	if (lexicalToken == "-")
+	{
+		expressionOperator = new Minus();
+	}
+	if (lexicalToken == "*")
+	{
+		expressionOperator = new Multiplication();
+	}
 	if (lexicalToken == "define")
 	{
 		expressionOperator = new Define();
